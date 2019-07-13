@@ -17,7 +17,7 @@ RSpec.describe ApplicationController, type: :controller do
       end
     end
 
-    context 'when  auth token is not passed' do
+    context 'when auth token is not passed' do
       before do
         allow(request).to receive(:headers).and_return(invalid_headers)
       end
